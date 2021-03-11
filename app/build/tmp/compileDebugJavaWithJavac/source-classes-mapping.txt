@@ -1,0 +1,6 @@
+com/core/shaditest/databinding/ActivityMainBinding.java
+ com.core.shaditest.databinding.ActivityMainBinding
+com/core/shaditest/BuildConfig.java
+ com.core.shaditest.BuildConfig
+com/core/shaditest/databinding/LayoutProfileBinding.java
+ com.core.shaditest.databinding.LayoutProfileBinding

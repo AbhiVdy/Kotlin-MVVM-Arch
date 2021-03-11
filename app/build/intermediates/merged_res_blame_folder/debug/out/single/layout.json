@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_profile.xml",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/layout/layout_profile.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/layout/activity_main.xml"
+    }
+]
