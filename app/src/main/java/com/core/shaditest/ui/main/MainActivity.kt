@@ -74,9 +74,6 @@ class MainActivity : AppCompatActivity(), ProfileAdapter.ProfileEventListener {
                     }
                 }
             })
-        } else {
-            val demo = mainViewModel.getSavedData().value
-            val demo2 = demo?.size
         }
     }
 
