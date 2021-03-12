@@ -1,16 +1,20 @@
 package com.core.shaditest.ui.base
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import com.core.shaditest.data.helper.UIView
+import androidx.lifecycle.*
+import com.core.shaditest.data.model.ResponseDaoModel
 import com.core.shaditest.data.model.ResponseModel
 import com.core.shaditest.data.repository.MainRepository
+import com.core.shaditest.data.repository.ResponseDAORepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
+import kotlinx.coroutines.launch
 
-class MainViewModel(private val mainRepository: MainRepository, val size: Int) : ViewModel() {
+class MainViewModel(
+    private val mainRepository: MainRepository,
+    private val responseDAORepository: ResponseDAORepository,
+    size: Int
+) : ViewModel() {
 
     private val profileList = MutableLiveData<UIView<ResponseModel>>()
     private val compositeDisposable = CompositeDisposable()
@@ -18,6 +22,18 @@ class MainViewModel(private val mainRepository: MainRepository, val size: Int) :
     init {
         getProfiles(size)
     }
+
+    fun saveToDatabase(responseModel: ResponseModel) = viewModelScope.launch {
+        for (model in responseModel.results) {
+            val name = model.name.first + " " + model.name.last
+            responseDAORepository.insert(ResponseDaoModel(name))
+        }
+    }
+
+    fun getSavedData(): LiveData<List<ResponseDaoModel>> {
+        return responseDAORepository.responseModel.asLiveData()
+    }
+
 
     fun getProfiles(size: Int) {
         profileList.postValue(UIView.showLoading(null))
@@ -30,6 +46,7 @@ class MainViewModel(private val mainRepository: MainRepository, val size: Int) :
                         profileList.postValue(
                             UIView.success(obj)
                         )
+                        saveToDatabase(obj)
                     },
                     { throwable ->
                         profileList.postValue(

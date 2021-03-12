@@ -10,6 +10,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import com.core.shaditest.R;
+import com.google.android.material.progressindicator.LinearProgressIndicator;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -19,11 +20,15 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final LinearProgressIndicator progressIndicator;
+
+  @NonNull
   public final RecyclerView rvProfiles;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView rvProfiles) {
+      @NonNull LinearProgressIndicator progressIndicator, @NonNull RecyclerView rvProfiles) {
     this.rootView = rootView;
+    this.progressIndicator = progressIndicator;
     this.rvProfiles = rvProfiles;
   }
 
@@ -54,13 +59,19 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.progressIndicator;
+      LinearProgressIndicator progressIndicator = rootView.findViewById(id);
+      if (progressIndicator == null) {
+        break missingId;
+      }
+
       id = R.id.rvProfiles;
       RecyclerView rvProfiles = rootView.findViewById(id);
       if (rvProfiles == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, rvProfiles);
+      return new ActivityMainBinding((ConstraintLayout) rootView, progressIndicator, rvProfiles);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

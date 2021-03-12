@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ShadiTest</string>
+    <string name="cancel_request">Cancel Request</string>
+    <string name="accept">ACCEPT</string>
+    <string name="reject">REJECT</string>
+    <string name="request_sent_successfully">Request sent successfully...</string>
+    <string name="profile_rejected">Profile Rejected</string>
 </resources>

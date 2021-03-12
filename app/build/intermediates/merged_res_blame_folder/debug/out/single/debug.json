@@ -1,15 +1,115 @@
 [
     {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_united_states.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_united_states.xml"
+    },
+    {
         "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_canada.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_canada.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_ireland.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_ireland.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_france.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_france.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_united_kingdom.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_united_kingdom.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/font_roboto_bolditalic.ttf.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/font/roboto_bolditalic.ttf"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/layout_layout_profile.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/layout/layout_profile.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/font_roboto_light.ttf.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/font/roboto_light.ttf"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_india.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_india.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_denmark.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_denmark.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_accept_bg_rounded.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/accept_bg_rounded.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_germany.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_germany.xml"
     },
     {
         "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_shaadi_com_logo.png.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/shaadi_com_logo.png"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/layout_activity_launch.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/layout/activity_launch.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_launcher_animation.gif.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/launcher_animation.gif"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_spain.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_spain.xml"
     },
     {
         "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -20,44 +120,52 @@
         "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_turkey.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_turkey.xml"
     },
     {
-        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_finland.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_finland.xml"
     },
     {
         "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/layout_layout_profile.xml.flat",
-        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/layout/layout_profile.xml"
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_reject_bg_rounded.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/reject_bg_rounded.xml"
     },
     {
-        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ironman.jpeg.flat",
-        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ironman.jpeg"
-    },
-    {
-        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_russia.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_russia.xml"
     },
     {
         "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/font_roboto_regular.ttf.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/font/roboto_regular.ttf"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/font_roboto_bold.ttf.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/font/roboto_bold.ttf"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/drawable_ic_sweden.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/drawable/ic_sweden.xml"
+    },
+    {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/font_roboto.xml.flat",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/font/roboto.xml"
     },
     {
         "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",

@@ -1,5 +1,6 @@
 package com.core.shaditest.data.model
 
+import com.core.shaditest.utils.Constants
 import com.google.gson.annotations.SerializedName
 
 data class ResponseModel(
@@ -33,7 +34,8 @@ data class Profiles(
     @SerializedName("picture")
     val picture: Picture,
     @SerializedName("nat")
-    val nat: String
+    val nat: String,
+    var status: Constants.SELECTION_STATUS? = null
 )
 
 data class Info(

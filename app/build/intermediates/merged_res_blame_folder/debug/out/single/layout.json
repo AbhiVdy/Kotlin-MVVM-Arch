@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_launch.xml",
+        "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/layout/activity_launch.xml"
+    },
+    {
         "merged": "/Users/xearo/Documents/Android/ShadiTest/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_profile.xml",
         "source": "/Users/xearo/Documents/Android/ShadiTest/app/src/main/res/layout/layout_profile.xml"
     },

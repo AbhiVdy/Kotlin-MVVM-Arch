@@ -4,10 +4,13 @@ package com.core.shaditest.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import com.core.shaditest.R;
 import com.mikhaellopez.circularimageview.CircularImageView;
@@ -20,7 +23,28 @@ public final class LayoutProfileBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final AppCompatButton btnAccept;
+
+  @NonNull
+  public final Button btnCancelRequest;
+
+  @NonNull
+  public final AppCompatButton btnReject;
+
+  @NonNull
+  public final ImageView ivFlag;
+
+  @NonNull
   public final CircularImageView ivProfile;
+
+  @NonNull
+  public final LinearLayout llAccept;
+
+  @NonNull
+  public final LinearLayout llAction;
+
+  @NonNull
+  public final LinearLayout llReject;
 
   @NonNull
   public final TextView tvAge;
@@ -28,10 +52,20 @@ public final class LayoutProfileBinding implements ViewBinding {
   @NonNull
   public final TextView tvName;
 
-  private LayoutProfileBinding(@NonNull LinearLayout rootView, @NonNull CircularImageView ivProfile,
-      @NonNull TextView tvAge, @NonNull TextView tvName) {
+  private LayoutProfileBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton btnAccept,
+      @NonNull Button btnCancelRequest, @NonNull AppCompatButton btnReject,
+      @NonNull ImageView ivFlag, @NonNull CircularImageView ivProfile,
+      @NonNull LinearLayout llAccept, @NonNull LinearLayout llAction,
+      @NonNull LinearLayout llReject, @NonNull TextView tvAge, @NonNull TextView tvName) {
     this.rootView = rootView;
+    this.btnAccept = btnAccept;
+    this.btnCancelRequest = btnCancelRequest;
+    this.btnReject = btnReject;
+    this.ivFlag = ivFlag;
     this.ivProfile = ivProfile;
+    this.llAccept = llAccept;
+    this.llAction = llAction;
+    this.llReject = llReject;
     this.tvAge = tvAge;
     this.tvName = tvName;
   }
@@ -63,9 +97,51 @@ public final class LayoutProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnAccept;
+      AppCompatButton btnAccept = rootView.findViewById(id);
+      if (btnAccept == null) {
+        break missingId;
+      }
+
+      id = R.id.btnCancelRequest;
+      Button btnCancelRequest = rootView.findViewById(id);
+      if (btnCancelRequest == null) {
+        break missingId;
+      }
+
+      id = R.id.btnReject;
+      AppCompatButton btnReject = rootView.findViewById(id);
+      if (btnReject == null) {
+        break missingId;
+      }
+
+      id = R.id.ivFlag;
+      ImageView ivFlag = rootView.findViewById(id);
+      if (ivFlag == null) {
+        break missingId;
+      }
+
       id = R.id.ivProfile;
       CircularImageView ivProfile = rootView.findViewById(id);
       if (ivProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.llAccept;
+      LinearLayout llAccept = rootView.findViewById(id);
+      if (llAccept == null) {
+        break missingId;
+      }
+
+      id = R.id.llAction;
+      LinearLayout llAction = rootView.findViewById(id);
+      if (llAction == null) {
+        break missingId;
+      }
+
+      id = R.id.llReject;
+      LinearLayout llReject = rootView.findViewById(id);
+      if (llReject == null) {
         break missingId;
       }
 
@@ -81,7 +157,8 @@ public final class LayoutProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new LayoutProfileBinding((LinearLayout) rootView, ivProfile, tvAge, tvName);
+      return new LayoutProfileBinding((LinearLayout) rootView, btnAccept, btnCancelRequest,
+          btnReject, ivFlag, ivProfile, llAccept, llAction, llReject, tvAge, tvName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -424,8 +424,10 @@ attr fontVariationSettings
 attr fontWeight
 attr foregroundInsidePadding
 attr framePosition
+attr freezesAnimation
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
+attr gifSource
 attr goIcon
 attr haloColor
 attr haloRadius
@@ -468,6 +470,7 @@ attr initialActivityCount
 attr insetForeground
 attr isLightTheme
 attr isMaterialTheme
+attr isOpaque
 attr itemBackground
 attr itemFillColor
 attr itemHorizontalPadding
@@ -587,6 +590,7 @@ attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
+attr loopCount
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogTheme
 attr materialAlertDialogTitleIconStyle
@@ -988,6 +992,9 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color checkbox_themeable_attribute_color
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1034,6 +1041,8 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green
+color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ivory
@@ -1132,10 +1141,8 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
-color purple_200
-color purple_500
-color purple_700
 color radiobutton_themeable_attribute_color
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -1148,8 +1155,6 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
-color teal_200
-color teal_700
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
@@ -1631,6 +1636,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable accept_bg_rounded
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1647,7 +1653,14 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_canada
 drawable ic_clock_black_24dp
+drawable ic_denmark
+drawable ic_finland
+drawable ic_france
+drawable ic_germany
+drawable ic_india
+drawable ic_ireland
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1655,7 +1668,13 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ironman
+drawable ic_russia
+drawable ic_spain
+drawable ic_sweden
+drawable ic_turkey
+drawable ic_united_kingdom
+drawable ic_united_states
+drawable launcher_animation
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1688,9 +1707,16 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable reject_bg_rounded
+drawable shaadi_com_logo
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font roboto
+font roboto_bold
+font roboto_bolditalic
+font roboto_light
+font roboto_regular
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1778,6 +1804,9 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnAccept
+id btnCancelRequest
+id btnReject
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1884,6 +1913,8 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id ivFlag
+id ivLogo
 id ivProfile
 id jumpToEnd
 id jumpToStart
@@ -1898,6 +1929,9 @@ id line3
 id linear
 id listMode
 id list_item
+id llAccept
+id llAction
+id llReject
 id masked
 id material_clock_display
 id material_clock_face
@@ -1978,6 +2012,8 @@ id percent
 id pin
 id position
 id postLayout
+id progressIndicator
+id progressLoader
 id progress_circular
 id progress_horizontal
 id radio
@@ -2099,6 +2135,8 @@ id unlabeled
 id up
 id useLogo
 id view_offset_helper
+id view_tree_lifecycle_owner
+id view_tree_view_model_store_owner
 id visible
 id withText
 id withinBounds
@@ -2165,6 +2203,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_launch
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2250,6 +2289,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
@@ -2279,10 +2319,12 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string accept
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string cancel_request
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -2350,6 +2392,9 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string profile_rejected
+string reject
+string request_sent_successfully
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
@@ -2360,6 +2405,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -2816,7 +2862,6 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
-style Theme_ShadiTest
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark
@@ -3119,6 +3164,8 @@ styleable FlowLayout itemSpacing lineSpacing
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
+styleable GifTextureView gifSource isOpaque
+styleable GifView freezesAnimation loopCount
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable ImageFilterView altSrc brightness contrast crossfade overlay round roundPercent saturation warmth
