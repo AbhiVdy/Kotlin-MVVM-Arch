@@ -7,7 +7,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.core.shaditest.data.helper.NetworkHelper
 import com.core.shaditest.data.model.Profiles
@@ -17,6 +16,7 @@ import com.core.shaditest.databinding.ActivityMainBinding
 import com.core.shaditest.ui.base.MainViewModel
 import com.core.shaditest.ui.base.VMFactory
 import com.core.shaditest.utils.Constants
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity(), ProfileAdapter.ProfileEventListener {
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity(), ProfileAdapter.ProfileEventListener {
                         responseModel = it?.data
                         responseModel?.let { it1 ->
                             addDataToList(it1)
-                            lifecycleScope.launch {
+                            GlobalScope.launch {
                                 mainViewModel.saveToDatabase(it1)
                             }
                         }
@@ -74,6 +74,14 @@ class MainActivity : AppCompatActivity(), ProfileAdapter.ProfileEventListener {
                     }
                 }
             })
+        } else {
+            GlobalScope.launch {
+                mainViewModel.getSavedData().observe(this@MainActivity, Observer { list ->
+                    for (item in list) {
+                        println(item.nameStr)
+                    }
+                })
+            }
         }
     }
 

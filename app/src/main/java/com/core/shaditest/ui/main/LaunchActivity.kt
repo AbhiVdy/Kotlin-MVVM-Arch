@@ -1,9 +1,9 @@
-package com.core.shaditest
+package com.core.shaditest.ui.main
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.core.shaditest.ui.main.MainActivity
+import com.core.shaditest.R
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
