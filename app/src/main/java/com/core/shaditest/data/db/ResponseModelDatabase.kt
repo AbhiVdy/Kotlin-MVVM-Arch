@@ -5,10 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.core.shaditest.data.helper.ResponseModelDAO
-import com.core.shaditest.data.model.ResponseDaoModel
+import com.core.shaditest.data.model.Profiles
 import kotlinx.coroutines.CoroutineScope
 
-@Database(entities = [ResponseDaoModel::class], version = 1)
+@Database(entities = [Profiles::class], version = 1, exportSchema = false)
 abstract class ResponseModelDatabase : RoomDatabase() {
 
     abstract fun responseDAO(): ResponseModelDAO
@@ -26,7 +26,7 @@ abstract class ResponseModelDatabase : RoomDatabase() {
                         context.applicationContext,
                         ResponseModelDatabase::class.java,
                         DB_NAME
-                    ).allowMainThreadQueries().build()
+                    ).build()
                 INSTANCE = instance
                 instance
             }

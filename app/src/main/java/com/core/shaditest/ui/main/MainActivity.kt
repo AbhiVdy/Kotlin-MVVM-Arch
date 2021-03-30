@@ -7,15 +7,18 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.asLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.core.shaditest.data.helper.NetworkHelper
 import com.core.shaditest.data.model.Profiles
 import com.core.shaditest.data.model.ResponseModel
+import com.core.shaditest.data.network.ConnectionLiveData
 import com.core.shaditest.data.network.NetworkServiceImpl
 import com.core.shaditest.databinding.ActivityMainBinding
 import com.core.shaditest.ui.base.MainViewModel
 import com.core.shaditest.ui.base.VMFactory
 import com.core.shaditest.utils.Constants
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -23,6 +26,7 @@ class MainActivity : AppCompatActivity(), ProfileAdapter.ProfileEventListener {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var mainViewModel: MainViewModel
+    private lateinit var connectionLiveData: ConnectionLiveData
     private var responseModel: ResponseModel? = null
     private var profilesList: ArrayList<Profiles>? = null
     private var profileAdapter: ProfileAdapter? = null
@@ -59,7 +63,7 @@ class MainActivity : AppCompatActivity(), ProfileAdapter.ProfileEventListener {
                     Constants.Status.SUCCESS -> {
                         responseModel = it?.data
                         responseModel?.let { it1 ->
-                            addDataToList(it1)
+                            addDataToList(it1.results)
                             GlobalScope.launch {
                                 mainViewModel.saveToDatabase(it1)
                             }
@@ -75,23 +79,23 @@ class MainActivity : AppCompatActivity(), ProfileAdapter.ProfileEventListener {
                 }
             })
         } else {
-            GlobalScope.launch {
-                mainViewModel.getSavedData().observe(this@MainActivity, Observer { list ->
-                    for (item in list) {
-                        println(item.nameStr)
-                    }
-                })
+            GlobalScope.launch(Dispatchers.Main) {
+                mainViewModel.getSavedData().asLiveData()
+                    .observe(this@MainActivity, Observer { list ->
+
+                        addDataToList(list)
+                    })
             }
         }
     }
 
-    private fun addDataToList(responseModel: ResponseModel) {
+    private fun addDataToList(profileListObj: List<Profiles>) {
         if (profilesList == null) {
-            profilesList = responseModel.results as ArrayList<Profiles>
+            profilesList = profileListObj as ArrayList<Profiles>
             profileAdapter = ProfileAdapter(profilesList, this)
             binding.rvProfiles.adapter = profileAdapter
         } else {
-            profilesList?.addAll(responseModel.results)
+            profilesList?.addAll(profileListObj)
             profileAdapter?.notifyDataSetChanged()
         }
     }

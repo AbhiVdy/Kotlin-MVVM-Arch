@@ -76,9 +76,12 @@ dependencies {
     implementation "androidx.room:room-ktx:2.2.6"
     testImplementation "androidx.room:room-testing:2.2.6"
 
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.0"
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.0'
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
+
+    //Jetpack Compose
+    implementation 'androidx.compose:compose-runtime:0.1.0-dev14'
 
     //GifViewer
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'

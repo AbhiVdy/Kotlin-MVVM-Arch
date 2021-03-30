@@ -1,5 +1,9 @@
 package com.core.shaditest.data.model
 
+import androidx.room.Embedded
+import androidx.room.Entity
+import androidx.room.Ignore
+import androidx.room.PrimaryKey
 import com.core.shaditest.utils.Constants
 import com.google.gson.annotations.SerializedName
 
@@ -10,33 +14,42 @@ data class ResponseModel(
     val info: Info
 )
 
+@Entity(tableName = "profilemodel")
 data class Profiles(
+    @PrimaryKey(autoGenerate = true)
+    var primId: Int?,
+
     @SerializedName("gender")
-    val gender: String,
+    var gender: String,
     @SerializedName("name")
-    val name: Name,
+    @Embedded var name: Name?,
     @SerializedName("location")
-    val location: Location,
+    @Embedded var location: Location?,
     @SerializedName("email")
-    val email: String,
+    var email: String,
     @SerializedName("login")
-    val login: Login,
+    @Embedded var login: Login?,
     @SerializedName("dob")
-    val dob: DOB,
+    @Embedded var dob: DOB?,
     @SerializedName("registered")
-    val registered: Registered,
+    @Embedded var registered: Registered?,
     @SerializedName("phone")
-    val phone: String,
+    var phone: String,
     @SerializedName("cell")
-    val cell: String,
+    var cell: String,
     @SerializedName("id")
-    val id: Id,
+    @Embedded var id: Id?,
     @SerializedName("picture")
-    val picture: Picture,
+    @Embedded var picture: Picture?,
     @SerializedName("nat")
-    val nat: String,
-    var status: Constants.SELECTION_STATUS? = null
-)
+    var nat: String,
+    @Ignore var status: Constants.SELECTION_STATUS? = null
+) {
+    constructor() : this(
+        null,
+        "Dummy", null, null, "asd", null, null, null, "", "", null, null, ""
+    )
+}
 
 data class Info(
     @SerializedName("seed")
@@ -65,9 +78,9 @@ data class Street(
 
 data class Registered(
     @SerializedName("date")
-    var date: String? = null,
+    var dateReg: String? = null,
     @SerializedName("age")
-    var age: Int? = null
+    var ageReg: Int? = null
 )
 
 data class Picture(
@@ -107,7 +120,7 @@ data class Login(
 
 data class Location(
     @SerializedName("street")
-    var street: Street? = null,
+    @Ignore var street: Street? = null,
     @SerializedName("city")
     var city: String? = null,
     @SerializedName("state")
@@ -117,21 +130,21 @@ data class Location(
     @SerializedName("postcode")
     var postcode: String? = null,
     @SerializedName("coordinates")
-    var coordinates: Coordinates? = null,
+    @Ignore var coordinates: Coordinates? = null,
     @SerializedName("timezone")
-    var timezone: Timezone? = null
+    @Ignore var timezone: Timezone? = null
 )
 
 data class Id(
     @SerializedName("name")
     var name: String? = null,
     @SerializedName("value")
-    var value: Any? = null
+    var value: String? = null
 )
 
 data class DOB(
     @SerializedName("date")
-    var date: String? = null,
+    var dateDob: String? = null,
     @SerializedName("age")
     var age: Int? = null
 )

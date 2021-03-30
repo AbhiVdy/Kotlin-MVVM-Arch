@@ -58,10 +58,10 @@ class ProfileAdapter(
 
         fun bind(profile: Profiles, listener: ProfileEventListener, position: Int) {
             val strBuilder = StringBuilder()
-            strBuilder.append(profile.name.first).append(" ").append(profile.name.last)
+            strBuilder.append(profile.name?.first).append(" ").append(profile.name?.last)
             tvName.text = strBuilder.toString()
-            Picasso.get().load(profile.picture.large).into(ivProfile)
-            tvAge.text = "Age: " + profile.dob.age.toString()
+            Picasso.get().load(profile.picture?.large).into(ivProfile)
+            tvAge.text = "Age: " + profile.dob?.age.toString()
             ivFlag.setImageResource(Constants.getFlagByNat(profile.nat))
 
             llAction.visibility = View.GONE
